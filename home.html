@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Game Hub - Home</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: linear-gradient(120deg, #232526 0%, #414345 100%);
+      min-height: 100vh;
+      margin: 0;
+      color: #fff;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 16px 0 16px;
+    }
+    h1, h2 {
+      color: #ffd700;
+      margin-bottom: 18px;
+      letter-spacing: 1px;
+    }
+    .video-section {
+      margin: 30px auto 40px auto;
+      max-width: 700px;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.25);
+      background: #181c22;
+    }
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 28px;
+      margin: 40px 0 32px 0;
+    }
+    .service-card {
+      background: linear-gradient(120deg, #1a2233 60%, #232526 100%);
+      color: #fff;
+      border-radius: 12px;
+      padding: 28px 32px;
+      min-width: 220px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+      text-align: center;
+      transition: transform 0.18s, box-shadow 0.18s;
+    }
+    .service-card:hover {
+      transform: translateY(-8px) scale(1.04);
+      box-shadow: 0 8px 24px rgba(255, 215, 0, 0.13);
+      background: linear-gradient(120deg, #232526 60%, #1a2233 100%);
+    }
+    .accounts-section {
+      margin: 40px 0 0 0;
+    }
+    .accounts-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 28px;
+      justify-content: center;
+      margin-top: 18px;
+    }
+    .account-card {
+      background: #fff;
+      color: #222;
+      border-radius: 14px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.13);
+      width: 210px;
+      padding: 18px 12px 16px 12px;
+      text-align: center;
+      position: relative;
+      transition: transform 0.18s, box-shadow 0.18s;
+      cursor: pointer;
+    }
+    .account-card:hover {
+      transform: translateY(-8px) scale(1.04);
+      box-shadow: 0 8px 24px rgba(255, 69, 0, 0.13);
+    }
+    .account-card img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 12px;
+      border: 2px solid #ffd70033;
+      background: #eee;
+    }
+    .price-tag {
+      background: #ff4500;
+      color: #fff;
+      padding: 7px 18px;
+      border-radius: 20px;
+      font-weight: bold;
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      font-size: 1em;
+      box-shadow: 0 2px 8px rgba(255,69,0,0.08);
+      letter-spacing: 1px;
+    }
+    .account-card h4 {
+      margin: 10px 0 4px 0;
+      font-size: 1.08em;
+      color: #232526;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+    .rating {
+      color: #ffd700;
+      margin: 6px 0 0 0;
+      font-size: 1.15em;
+      letter-spacing: 2px;
+      font-weight: bold;
+    }
+    .testimonials {
+      background: #fff;
+      color: #222;
+      border-radius: 14px;
+      max-width: 700px;
+      margin: 48px auto 60px auto;
+      padding: 36px 28px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+    }
+    .testimonials h2 {
+      color: #ff4500;
+      margin-bottom: 24px;
+      letter-spacing: 1px;
+    }
+    .testimonial {
+      margin-bottom: 26px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #eee;
+    }
+    .testimonial:last-child {
+      margin-bottom: 0;
+      border-bottom: none;
+    }
+    .testimonial .user {
+      font-weight: bold;
+      color: #ff4500;
+      font-size: 1.08em;
+    }
+    .testimonial .stars {
+      color: #ffd700;
+      font-size: 1.1em;
+      margin-left: 8px;
+    }
+    .testimonial p {
+      margin: 8px 0 0 0;
+      font-size: 1em;
+      color: #444;
+    }
+    @media (max-width: 900px) {
+      .accounts-list, .services {
+        flex-direction: column;
+        align-items: center;
+      }
+      .container {
+        padding: 24px 4vw 0 4vw;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to Game Hub</h1>
+    <div class="video-section">
+      <video width="100%" controls poster="https://th.bing.com/th/id/OIP.XZIr5vt8PdeSSn9cxAbCPAHaFj?rs=1&pid=ImgDetMain">
+        <source src="https://www.bing.com/videos/riverview/relatedvideo?q=call+of+duty+video+game+clip&mid=00608FEA73545DED2D4500608FEA73545DED2D45&mmscn=stvo&FORM=VIRE" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service-card">
+        <h3>Gaming Account Sales</h3>
+        <p>Buy premium gaming accounts for top titles.</p>
+      </div>
+      <div class="service-card">
+        <h3>Social Media Accounts</h3>
+        <p>Verified Instagram, Facebook, TikTok, and more.</p>
+      </div>
+      <div class="service-card">
+        <h3>Top Up Services</h3>
+        <p>Instant game credits and in-game currency top-ups.</p>
+      </div>
+      <div class="service-card">
+        <h3>Ads & Promotions</h3>
+        <p>Promote your gaming or social media profile with us.</p>
+      </div>
+      <div class="service-card">
+        <h3>Account Recovery</h3>
+        <p>Lost access? We help recover your gaming accounts.</p>
+      </div>
+    </div>
+
+    <div class="accounts-section">
+      <h2>Available Gaming Accounts</h2>
+      <div class="accounts-list">
+        <div class="account-card">
+          <img src="data:image/jpeg;base64,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" alt="Gaming Account 1">
+          <div class="price-tag">₦50,000</div>
+          <h4>FIFA 24 Ultimate</h4>
+          <div class="rating">★★★★★</div>
+        </div>
+        <div class="account-card">
+          <img src="https://www.bing.com/images/search?q=call+of+duty&id=4EA099AF1716A3E270AC8E7ECA60A68A7193D5F7&FORM=IACFIR" alt="Gaming Account 2">
+          <div class="price-tag">₦60,000</div>
+          <h4>Call of Duty Elite</h4>
+          <div class="rating">★★★★☆</div>
+        </div>
+        <div class="account-card">
+          <img src="https://www.bing.com/images/search?q=pubg&id=231FF5862B165DF92258265CE50435558AA4F6BE&FORM=IACFIR" alt="Gaming Account 3">
+          <div class="price-tag">₦30,000</div>
+          <h4>PUBG Pro</h4>
+          <div class="rating">★★★★☆</div>
+        </div>
+        <div class="account-card">
+          <img src="https://www.bing.com/images/search?q=fortnite&id=66C7876CF7B5F788CB3E8779AEE57F616CE51E9E&FORM=IACFIR" alt="Gaming Account 4">
+          <div class="price-tag">₦35,000</div>
+          <h4>Fortnite OG</h4>
+          <div class="rating">★★★★★</div>
+        </div>
+        <div class="account-card">
+          <img src="https://th.bing.com/th/id/OIP.YYA1QSw8shFEvZFpR1QsEAHaEK?w=313&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="Gaming Account 5">
+          <div class="price-tag">₦90,000</div>
+          <h4>GTA V Premium</h4>
+          <div class="rating">★★★★★</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonials">
+      <h2>What Our Customers Say</h2>
+      <div class="testimonial">
+        <span class="user">Emeka O.</span>
+        <span class="stars">★★★★★</span>
+        <p>Fast delivery and the account was exactly as described. Highly recommend!</p>
+      </div>
+      <div class="testimonial">
+        <span class="user">Blessing A.</span>
+        <span class="stars">★★★★★</span>
+        <p>Got my PUBG account in minutes. Great service and support!</p>
+      </div>
+      <div class="testimonial">
+        <span class="user">Tunde G.</span>
+        <span class="stars">★★★★☆</span>
+        <p>Top up was instant. Will buy again for sure.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
